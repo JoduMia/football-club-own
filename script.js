@@ -1,3 +1,7 @@
+window.onload = function () {
+    btn();
+}
+
 function btn() {
     const btnAdd = document.querySelectorAll('[btn]');
     btnAdd.forEach(btn => {
@@ -10,15 +14,15 @@ function btn() {
     })
 }
 
-btn();
 
 
+// =============== Appending funcion when click the select button =========//
 function appendNames(name) {
     const nameBox = document.getElementById('name-box');
     const singleName = document.createElement('span');
-    singleName.innerHTML = `<li class="text-white hover:bg-color1 hover:text-yellow-400 font-semibold text-lg font-berkshire duration-300">${name}</li>`;
+    singleName.setAttribute('class', 'block');
+    singleName.innerHTML = `<li onclick='this.parentNode.removeChild(this)' class="text-white hover:bg-color1 hover:text-yellow-400 font-semibold text-lg font-berkshire duration-300">${name}</li>`;
     if((nameBox.children.length) <= 4) {
-    console.log((nameBox.children.length));
         nameBox.appendChild(singleName);
     } else {
         alert('You can\'t take more than five Players !!!');
@@ -26,6 +30,9 @@ function appendNames(name) {
     }
 }
 
+
+
+// ========== calculation button eventlistener ==========//
 document.getElementById('cal').addEventListener('click', function () {
     const totalSection = document.getElementById('totalsection');
     const playerCost = document.getElementById('playercost');
@@ -40,7 +47,7 @@ document.getElementById('cal').addEventListener('click', function () {
     }
 });
 
-
+// ============ Event added for total calculation ===========//
 document.getElementById('cal-total').addEventListener('click', function () {
     const mangerCost = getValue('manager-cost');
     const coachCost = getValue('coach-cost');
@@ -51,4 +58,3 @@ document.getElementById('cal-total').addEventListener('click', function () {
     const finalCost = document.getElementById('totalcost');
     finalCost.innerText = totalCost;
 });
-

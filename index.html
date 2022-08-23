@@ -20,6 +20,30 @@
                 clifford: '#fe5e19',
                 color1: '#191919',
                 color2: '#b3b3b3',
+              },
+              keyframes: {
+                soccer: {
+                    from : {bottom: '-52px', right: '-20px'},
+                    to : {bottom: '-12px', right: '10px'}
+                },
+                shake: {
+                    from: {transform: 'rotate(1deg)', bottom: '-32px'},
+                    to: {transform: 'rotate(-1deg)', bottom: '-20px', transformOrigin: 'center center'}
+                },
+                skew: {
+                    from: {transform: 'scale(1)'},
+                    to: {transform: 'scale(1.1)'}
+                },
+                scratch: {
+                    from: {width: '0px', opacity: '0'},
+                    to: {width: '205px', opacity: '1'}
+                },
+              },
+              animation : {
+                soccer : 'soccer 1s ease-in-out infinite alternate',
+                shake: 'shake 1s ease-in-out .1s infinite alternate',
+                skew: 'skew 1s ease-in-out infinite alternate',
+                scratch: 'scratch .5s ease-in-out 3s',
               }
             }
           }
@@ -32,23 +56,25 @@
             <div class="px-24 py-28">
                 <div class="w-4/5 mx-auto relative space-y-10 text-center">
                     <h1 class="font-berkshire text-clifford capitalize text-7xl">squad with skilled five</h1>
-                    <img src="images/curb.png" class="absolute top-8 -right-4" alt="">
+                    <img src="images/curb.png" class="animate-scratch absolute top-8 -right-4" alt="">
                     <p class="text-white text-xl font-manrope">Playing outer side the field is shouldn't take lightly. All the success 50% comes from a proper planning before the match. All the coaching stuff and management should take a fruitful decision before the match at select their best eleven.</p>
                 </div>
             </div>
-            <img src="images/ambg.png" class="absolute -bottom-7 left-0" alt="picture">
-            <img src="images/soccer.png" class="absolute right-0 -bottom-8" alt="picture">
+            <img src="images/ambg.png" class="absolute animate-shake -bottom-8 -left-2" alt="picture">
+            <img src="images/soccer.png" class="absolute animate-soccer right-0 -bottom-8" alt="picture">
             <img src="images/shape.png" class="absolute -bottom-4 -right-56" alt="picture">
-            <img src="images/club.png" class="absolute top-20 right-24 w-40" alt="picture">
+            <img src="images/football.png" class="absolute animate-bounce top-0 left-28 w-28" alt="picture">
+            <img src="images/club.png" class="absolute top-7 right-28 w-40" alt="picture">
         </section>
     </header>
+
     <main class="bg-color1 pt-14">
         <section class="container w-4/5 mx-auto space-y-6">
             <div class="grid grid-cols-4 gap-6 max-h-fit">
                 <div class="col-span-3">
                     <div class="grid grid-cols-3 gap-6">
-                        <div class="border shadow-sm shadow-slate-100 border-color1">
-                            <img src="images/messi.png" alt="messi">
+                        <div class="border shadow-sm shadow-slate-100 border-color1 overflow-hidden">
+                            <img src="images/messi.png" class="hover:animate-skew" alt="messi">
                             <div class="text-center p-3 bg-black">
                                 <div>
                                     <h1 class="text-white font-bold text-xl font-manrope capitalize">Lionel Messi</h1>
@@ -58,8 +84,8 @@
                             </div>
                         </div>
 
-                        <div class="border shadow-sm shadow-slate-100 border-color1">
-                            <img src="images/neymar.png" alt="messi">
+                        <div class="border shadow-sm shadow-slate-100 border-color1 overflow-hidden">
+                            <img src="images/neymar.png" class="hover:animate-skew" alt="messi">
                             <div class="text-center p-3 bg-black">
                                 <div>
                                     <h1 class="text-white font-bold text-xl font-manrope capitalize">neymar junior</h1>
@@ -69,8 +95,8 @@
                             </div>
                         </div>
 
-                        <div class="border shadow-sm shadow-slate-100 border-color1">
-                            <img src="images/ramos.png" alt="messi">
+                        <div class="border shadow-sm shadow-slate-100 border-color1 overflow-hidden">
+                            <img src="images/ramos.png" class="hover:animate-skew" alt="messi">
                             <div class="text-center p-3 bg-black">
                                 <div>
                                     <h1 class="text-white font-bold text-xl font-manrope capitalize">sergio ramos</h1>
@@ -85,7 +111,7 @@
                     <div class="text-white text-center pt-3 overflow-y-scroll overflow-hidden max-h-72 space-y-4 pl-3">
                         <h1 class="capitalize font-bold text-2xl">selected V</h1>
                         <img src="images/marker.png" class="ml-12 mt-2" alt="">
-                        <ol id="name-box" type="1" class="text-start list-[decimal] list-inside space-y-3">
+                        <ol id="name-box" type="1" class="text-start list-[decimal] list-inside space-y-4">
 
                         </ol>
                     </div>
@@ -95,8 +121,8 @@
             <div class="grid grid-cols-4 gap-6">
                 <div class="col-span-3">
                     <div class="grid grid-cols-3 gap-6">
-                        <div class="border shadow-sm shadow-slate-100 border-color1">
-                            <img src="images/ambappe.png" alt="messi">
+                        <div class="border shadow-sm shadow-slate-100 border-color1 overflow-hidden">
+                            <img src="images/ambappe.png" class="hover:animate-skew" alt="messi">
                             <div class="text-center p-3 bg-black">
                                 <div>
                                     <h1 class="text-white font-bold text-xl font-manrope capitalize">killian ambappe</h1>
@@ -106,8 +132,8 @@
                             </div>
                         </div>
 
-                        <div class="border shadow-sm shadow-slate-100 border-color1">
-                            <img src="images/machado.png" alt="messi">
+                        <div class="border shadow-sm shadow-slate-100 border-color1 overflow-hidden">
+                            <img src="images/machado.png" class="hover:animate-skew" alt="messi">
                             <div class="text-center p-3 bg-black">
                                 <div>
                                     <h1 class="text-white font-bold text-xl font-manrope capitalize">vitor machado</h1>
@@ -117,8 +143,8 @@
                             </div>
                         </div>
 
-                        <div class="border shadow-sm shadow-slate-100 border-color1">
-                            <img src="images/sanches.png" alt="messi">
+                        <div class="border shadow-sm shadow-slate-100 border-color1 overflow-hidden">
+                            <img src="images/sanches.png" class="hover:animate-skew" alt="messi">
                             <div class="text-center p-3 bg-black">
                                 <div>
                                     <h1 class="text-white font-bold text-xl font-manrope capitalize">ronato sanches</h1>

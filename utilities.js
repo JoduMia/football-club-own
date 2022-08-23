@@ -1,4 +1,3 @@
-//==================== Get value common function ==============//
 function getValue(elementId) {
     return validation(elementId);
 }
