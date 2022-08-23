@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soccer club | Football forever</title>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Manrope:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+                fontFamily: {
+                    berkshire: ['Berkshire Swash', 'cursive'],
+                    manrope: ['Manrope', 'sans-serif']
+                },
+              colors: {
+                clifford: '#fe5e19',
+                color1: '#191919',
+                color2: '#b3b3b3',
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body>
+    <header class="bg-black">
+        <section class="relative overflow-hidden px-28">
+            <div class="px-24 py-28">
+                <div class="w-4/5 mx-auto relative space-y-10 text-center">
+                    <h1 class="font-berkshire text-clifford capitalize text-7xl">squad with skilled five</h1>
+                    <img src="images/curb.png" class="absolute top-8 -right-4" alt="">
+                    <p class="text-white text-xl font-manrope">Playing outer side the field is shouldn't take lightly. All the success 50% comes from a proper planning before the match. All the coaching stuff and management should take a fruitful decision before the match at select their best eleven.</p>
+                </div>
+            </div>
+            <img src="images/ambg.png" class="absolute -bottom-7 left-0" alt="picture">
+            <img src="images/soccer.png" class="absolute right-0 -bottom-8" alt="picture">
+            <img src="images/shape.png" class="absolute -bottom-4 -right-56" alt="picture">
+            <img src="images/club.png" class="absolute top-20 right-24 w-40" alt="picture">
+        </section>
+    </header>
+    <main class="bg-color1 pt-14">
+        <section class="container w-4/5 mx-auto space-y-6">
+            <div class="grid grid-cols-4 gap-6 max-h-fit">
+                <div class="col-span-3">
+                    <div class="grid grid-cols-3 gap-6">
+                        <div class="border shadow-sm shadow-slate-100 border-color1">
+                            <img src="images/messi.png" alt="messi">
+                            <div class="text-center p-3 bg-black">
+                                <div>
+                                    <h1 class="text-white font-bold text-xl font-manrope capitalize">Lionel Messi</h1>
+                                    <p class="text-color2 font-medium text-lg space-x-2 mb-4"><span>36 goals</span> <span>*</span> <span> 123 assists</span></p>
+                                    <button class="uppercase text-xl font-semibold text-white bg-blue-600 w-full px-3 py-1 border-2 border-transparent hover:bg-white hover:text-blue-600 hover:border-blue-600 disabled:bg-slate-200 hover:disabled:text-slate-50 hover:disabled:border-slate-50 duration-300" btn>Select</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="border shadow-sm shadow-slate-100 border-color1">
+                            <img src="images/neymar.png" alt="messi">
+                            <div class="text-center p-3 bg-black">
+                                <div>
+                                    <h1 class="text-white font-bold text-xl font-manrope capitalize">neymar junior</h1>
+                                    <p class="text-color2 font-medium text-lg space-x-2 mb-4"><span>114 goals</span> <span>*</span> <span> 101 assists</span></p>
+                                    <button class="uppercase text-xl font-semibold text-white bg-blue-600 w-full px-3 py-1 border-2 border-transparent hover:bg-white hover:text-blue-600 hover:border-blue-600 disabled:bg-slate-200 hover:disabled:text-slate-50 hover:disabled:border-slate-50 duration-300" btn>Select</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="border shadow-sm shadow-slate-100 border-color1">
+                            <img src="images/ramos.png" alt="messi">
+                            <div class="text-center p-3 bg-black">
+                                <div>
+                                    <h1 class="text-white font-bold text-xl font-manrope capitalize">sergio ramos</h1>
+                                    <p class="text-color2 font-medium text-lg space-x-2 mb-4"><span>69 goals</span> <span>*</span> <span> 129 assists</span></p>
+                                    <button class="uppercase text-xl font-semibold text-white bg-blue-600 w-full px-3 py-1 border-2 border-transparent hover:bg-white hover:text-blue-600 hover:border-blue-600 disabled:bg-slate-200 hover:disabled:text-slate-50 hover:disabled:border-slate-50 duration-300" btn>Select</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div  class="bg-black">
+                    <div class="text-white text-center pt-3 overflow-y-scroll overflow-hidden max-h-72 space-y-4 pl-3">
+                        <h1 class="capitalize font-bold text-2xl">selected V</h1>
+                        <img src="images/marker.png" class="ml-12 mt-2" alt="">
+                        <ol id="name-box" type="1" class="text-start list-[decimal] list-inside space-y-3">
+
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-4 gap-6">
+                <div class="col-span-3">
+                    <div class="grid grid-cols-3 gap-6">
+                        <div class="border shadow-sm shadow-slate-100 border-color1">
+                            <img src="images/ambappe.png" alt="messi">
+                            <div class="text-center p-3 bg-black">
+                                <div>
+                                    <h1 class="text-white font-bold text-xl font-manrope capitalize">killian ambappe</h1>
+                                    <p class="text-color2 font-medium text-lg space-x-2 mb-4"><span>23 goals</span> <span>*</span> <span> 93 assists</span></p>
+                                    <button class="uppercase text-xl font-semibold text-white bg-blue-600 w-full px-3 py-1 border-2 border-transparent hover:bg-white hover:text-blue-600 hover:border-blue-600 disabled:bg-slate-200 hover:disabled:text-slate-50 hover:disabled:border-slate-50 duration-300" btn>Select</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="border shadow-sm shadow-slate-100 border-color1">
+                            <img src="images/machado.png" alt="messi">
+                            <div class="text-center p-3 bg-black">
+                                <div>
+                                    <h1 class="text-white font-bold text-xl font-manrope capitalize">vitor machado</h1>
+                                    <p class="text-color2 font-medium text-lg space-x-2 mb-4"><span>47 goals</span> <span>*</span> <span> 90 assists</span></p>
+                                    <button class="uppercase text-xl font-semibold text-white bg-blue-600 w-full px-3 py-1 border-2 border-transparent hover:bg-white hover:text-blue-600 hover:border-blue-600 disabled:bg-slate-200 hover:disabled:text-slate-50 hover:disabled:border-slate-50 duration-300" btn>Select</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="border shadow-sm shadow-slate-100 border-color1">
+                            <img src="images/sanches.png" alt="messi">
+                            <div class="text-center p-3 bg-black">
+                                <div>
+                                    <h1 class="text-white font-bold text-xl font-manrope capitalize">ronato sanches</h1>
+                                    <p class="text-color2 font-medium text-lg space-x-2 mb-4"><span>45 goals</span> <span>*</span> <span> 99 assists</span></p>
+                                    <button class="uppercase text-xl font-semibold text-white bg-blue-600 w-full px-3 py-1 border-2 border-transparent hover:bg-white hover:text-blue-600 hover:border-blue-600 disabled:bg-slate-200 hover:disabled:text-slate-50 hover:disabled:border-slate-50 duration-300" btn>Select</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-black p-3 space-y-4">
+                    <div class="text-center mt-4">
+                        <h1 class="capitalize font-bold text-2xl text-white">budget</h1>
+                        <img src="images/marker.png" class="ml-12 mt-4" alt="">
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <p class="text-white font-medium capitalize text-lg font-berkshire">per player</p>
+                        <input type="text" id="player-cost" class="w-1/2 px-2 py-1 focus:outline-none">
+                    </div>
+                    <button id="cal" class="uppercase text-xl font-semibold text-white bg-blue-600 w-full px-3 py-1 border-2 border-transparent hover:bg-white hover:text-blue-600 hover:border-blue-600 disabled:bg-slate-200 hover:disabled:text-slate-50 hover:disabled:border-slate-50 duration-300">Calculate</button>
+                    <div class="flex items-center justify-between pt-3">
+                        <p class="text-white font-medium capitalize text-lg font-berkshire">player expense</p>
+                        <p class="text-white font-medium text-lg font-berkshire pr-3">$<span id="playercost">0</span></p>
+                    </div>
+
+                    <div class="space-y-3 hidden" id="totalsection">
+                        <div class="flex items-center justify-between">
+                            <p class="text-white font-medium capitalize text-lg font-berkshire">manager</p>
+                            <input type="text" id="manager-cost" class="w-1/2 px-2 py-1 focus:outline-none">
+                        </div>
+
+                        <div class="flex items-center justify-between">
+                            <p class="text-white font-medium capitalize text-lg font-berkshire">coach</p>
+                            <input type="text" id="coach-cost" class="w-1/2 px-2 py-1 focus:outline-none">
+                        </div>
+                        <button id="cal-total" class="uppercase text-lg font-semibold text-white bg-blue-600 w-full px-3 py-1 border-2 border-transparent hover:bg-white hover:text-blue-600 hover:border-blue-600 disabled:bg-slate-200 hover:disabled:text-slate-50 hover:disabled:border-slate-50 duration-300">Calculate total</button>
+                        <div class="flex items-center justify-between pt-3">
+                            <p class="text-white font-medium capitalize text-lg font-berkshire">toatal cost</p>
+                            <p class="text-white font-medium text-lg font-berkshire pr-3">$<span id="totalcost">0</span></p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="utilities.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
